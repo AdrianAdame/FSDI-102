@@ -276,5 +276,12 @@ fieldset legend {
     margin: 1rem;
 }
 
-
+.btn-submit {
+    background-color: rgb(112, 155, 47);
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
 
