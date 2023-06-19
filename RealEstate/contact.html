@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate</title>
+
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="site-navbar">
+        <div class="flex-container">
+            <h1>Real<span class="title">Estate</span></h1>
+            <nav class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Contact</h1>
+        <h2 class="page-subtitle">Fill the next information</h2>
+
+        <section class="form-container">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <div class="form-field">
+                        <label for="name">NAME: </label>
+                        <input type="text" class="input-control" name="name" id="name" placeholder="Type your name">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">EMAIL: </label>
+                        <input type="email" class="input-control" name="email" id="email" placeholder="Type your email">
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">PHONE NUMBER: </label>
+                        <input type="tel" class="input-control" name="tel" id="tel" placeholder="Type your cellphone">
+                    </div>
+                    <div class="form-field">
+                        <label for="name">MESSAGE: </label>
+                        <textarea class="input-control" name="message" id="message" rows="10" cols="50"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Product Information</legend>
+                    <div class="form-field">
+                        <label for="type">TYPE: </label>
+                        <select type="text" class="input-control" name="type" id="type">
+                            <option>--- Select an option ---</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="number">NUMBER: </label>
+                        <input type="number" class="input-control" name="number" id="number">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact information</legend>
+                    
+                    <div class="form-field flex-container">
+                        <div>
+                            <label for="phone-type">PHONE</label>
+                            <input type="radio" id="phone-type" name="contact" value="phone" checked>
+                        </div>
+                        <div>
+                            <label for="email-type">EMAIL</label>
+                            <input type="radio" id="email-type" name="contact" value="email">
+                        </div>
+                    </div>
+                    <p>If you want to be contacted by phone, please select a day and hour</p>
+                    <div class="form-field">
+                        <label for="name">DATE: </label>
+                        <input type="date" class="input-control" name="date" id="date">
+                    </div>
+                    <div class="form-field">
+                        <label for="name">HOUR: </label>
+                        <input type="time" class="input-control" name="time" id="time">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>

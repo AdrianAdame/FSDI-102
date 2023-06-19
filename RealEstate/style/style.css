@@ -91,6 +91,42 @@ nav.menu a {
     margin-left: 20px;
 }
 
+nav.menu {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Alternate navbar */
+
+.site-navbar {
+    background-color: rgb(56, 56, 56);
+    padding: 2rem;
+}
+.site-navbar > .flex-container{
+    margin: 0;
+}
+
+header.site-navbar h1{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+header.site-navbar p{
+    color: white;
+    text-align: center;
+    margin: 10rem;
+}
+
+header.flex-container{
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 /* Main */
 
 .about-item {
@@ -188,3 +224,57 @@ nav.menu a {
     font-size: 1.6rem;
     font-weight: bold;
 }
+
+/* Contact */
+
+.page-title {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 100;
+    margin: 2rem;
+}
+
+.page-subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 100;
+    margin: 3rem;
+}
+
+fieldset {
+    margin: 2rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+fieldset legend {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.input-control {
+    border-radius: 0.9rem;
+    border: 0;
+    padding: 0.4rem;
+    background-color: rgb(229, 227, 227);
+}
+
+.form-field.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 1rem;
+}
+
+
+
