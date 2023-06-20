@@ -99,10 +99,44 @@ nav.menu {
     justify-content: center;
     align-items: center;
 }
+
+/*Mobile menu */
+.mobile-menu {
+    display: none;
+}
+
+.bars {
+    width: 3rem;
+}
+
+#navigation {
+    display: flex;
+}
+
+@media(max-width:768px) {
+        /*Mobile menu */
+        .mobile-menu { 
+            display: block;
+        }
+    
+        nav#navigation {
+            display: none;
+        }
+    
+        nav.menu {
+            flex-direction: column;
+            gap:2rem;
+        }
+}
+
+#navigation:target {
+    display: flex;
+}
+
 /* Alternate navbar */
 
 .site-navbar {
-    background-color: rgb(56, 56, 56);
+    background-color: #383838;
     padding: 2rem;
 }
 .site-navbar > .flex-container{
@@ -285,3 +319,107 @@ fieldset legend {
     cursor: pointer;
 }
 
+/*Mobile View*/
+
+@media(max-width:768px) {
+
+    /* Utilities */
+    .container{
+        width: 90%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Main Index*/
+    .about-us h2 {
+        letter-spacing: 0.5rem;
+    }
+}
+
+/* Blog */
+
+.blog-entries {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:2.5rem;
+    width: 60%;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+
+.blog-entry {
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    background-color: #6d6875;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-left: 5px solid #ffb4a2;
+    color: white;
+}
+
+.blog-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:2rem;
+}
+
+.blog-img {
+    width: 40%;
+}
+
+.blog-title {
+    font-size: 2rem;
+}
+
+.blog-description {
+    font-size: 1.5rem;
+}
+
+.blog-time {
+    font-size: 1.2rem;
+}
+
+.blog-btn {
+    display: inline-block;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.blog-filters {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 3rem;
+}
+
+.search-bar{
+    padding: 2rem;
+    background-color: #dddddd;
+    border-radius: 1rem;
+}
+
+.topics {
+    padding: 2rem;
+    background-color: #dddddd;
+    border-radius: 1rem;
+}
+
+
+@media(max-width:768px) {
+    .blog-entries {
+        margin-bottom: 2rem;
+    }
+    
+}
